@@ -1,0 +1,481 @@
+
+<!-- saved from url=(0043)https://www2.stat.duke.edu/~sayan/561/2015/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>STA561 Probabilistic Machine Learning, Fall 2015</title>
+    <style type="text/css">
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#6633FF" vlink="#007f0f">
+
+<h2 align="center">STA561 COMPSCI571: Probabilistic Machine Learning: Fall 2015</h2>
+<table align="center">
+<tbody><tr><td>Prof:</td><td><a href="http://www.stat.duke.edu/~sayan/">Sayan Mukherjee</a></td>
+                 <td><a href="mailto:sayan@stat.duke.edu">
+                 <i>sayan</i></a><i>@stat.duke.edu</i></td><td></td>
+                 <td>OH: Mon 10-12</td><td>112 Old Chem</td></tr>                 
+<tr><td>TAs:</td> 
+</tr><tr><td></td><td>Abhishek
+    Dubey </td><td>abhisdub@cs.duke.edu</td><td>OH: Wednesday 10-11am
+LSRC D309 </td><td></td><td></td></tr> 
+<tr><td></td><td>Yuhao
+    Liang </td><td>yuhao.liang@duke.edu</td><td>OH: Monday 7:00-9:00pm
+    Old Chem 211a </td><td></td><td></td></tr> 
+<tr><td></td><td>Xinyi Li </td><td>xinyi.li@duke.edu</td><td>OH: </td><td></td><td></td></tr> 
+<tr><td>Class:</td><td>M/W
+    8:30-9:45am </td><td></td><td></td><td></td><td> Social Sciences 136 </td></tr> 
+</tbody></table>
+
+
+
+<hr>
+<h3 align="center">Description</h3>
+
+Introduction to machine learning techniques. Graphical models, latent
+variable models, dimensionality reduction techniques, statistical learning, regression, kernel methods, state space models, HMMs,  MCMC. Emphasis is on applying these techniques to real data in a variety of application areas.
+<p>
+
+
+</p><hr>
+<b>News and information</b>
+
+<p></p><p>
+All students: we will have one poster session, Dec 4.  The poster
+session will be in  Gross Hall 3rd floor East Meeting Space. For a
+keynote version of an example poster see
+<a href="https://stat.duke.edu/~sayan/561/2015/texposter"> tex
+  example </a>
+  or <a href="https://stat.duke.edu/~sayan/561/2015/keyposter">
+  keynote example.</a>
+
+
+If you are auditing the course, we'd love to have
+you at the poster sessions (bring your research groups too!).
+</p><p>
+
+
+</p><hr>
+
+Statistics at the level of STA611 (Introduction to Statistical
+Methods) is encouraged, along with knowledge of linear algebra and
+multivariate calculus. <p>
+
+Course grade is based on an in class midterm (15%), 
+in class final (35%), a final project (40%), and the poster session
+for the final project (10%). We will have homeworks but they will not
+be graded, we will post solutions.</p><p>
+
+There is a <a href="https://piazza.com/duke/fall2015/sta561">Piazza</a> course
+discussion page. Please direct questions about homeworks and other
+matters to that page. Otherwise, you can email the instructors (TAs
+and professor) at sta561-ta@duke.edu. Note that we are more likely to
+respond to the Piazza questions than to the email, and your classmates
+may respond too, so that is a good place to start.
+
+</p><p>
+
+
+The final porjects should be in LaTeX. If you have never used LaTeX before, there are <a href="http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/">online
+tutorials</a>, <a href="http://pages.uoregon.edu/koch/texshop/">Mac
+GUIs</a>, and even <a href="http://www.sharelatex.com/">online
+compilers</a> that might help you. 
+
+</p><p>
+
+The course project will include a project proposal due mid-semester, a
+four page writeup of the project at the end of the semester, and an
+all-campus poster session where you will present your work. This is
+the most important part of the course; we strongly encourage you to
+come and discuss project ideas with us early and often throughout the
+semester. We expect some of these projects to become publications. You
+are absolutely permitted to use your current rotation or research
+project as course projects. Examples of last years <a href="https://stat.duke.edu/~sayan/561/2014/Projects.pdf">projects</a>.
+
+</p><p>
+
+A second set of references for R may be useful. First, you can
+download R from the <a href="http://cran.r-project.org/">CRAN
+website</a>. There are many resources, such as <a href="http://www.rstudio.com/">R Studio</a>, that can help with the
+programming interface, and <a href="http://www.r-tutor.com/">tutorials
+on R</a> are all over the place. If you are getting bored with the
+standard graphics package, I really like using <a href="http://ggplot2.org/">ggplot2</a> for beautiful graphics and
+figures. Finally, you can integrate R code and output with plain text
+using <a href="http://yihui.name/knitr/">KNITR</a>, but that might be
+going a bit too far if you are a beginner.
+
+</p><p>
+
+The course will follow my lecture notes (this will be updated as the
+course
+proceeds), <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture
+    Notes</a>.
+
+Some other texts and notes that may be useful include:
+</p><ol>
+<li> Kevin  Murphy, <a href="http://www.cs.ubc.ca/~murphyk/MLbook/index.html">
+Machine Learning: a probabilistic perspective</a>
+</li><li>Michael Lavine, <a href="https://www.math.umass.edu/~lavine/Book/book.html">Introduction to Statistical Thought</a> (an introductory statistical textbook with plenty of R examples, and it's online too)
+</li><li>Chris Bishop, <a href="http://research.microsoft.com/en-us/um/people/cmbishop/PRML/index.htm">Pattern Recognition and Machine Learning</a>
+</li><li>Daphne Koller &amp; Nir Friedman, <a href="http://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193">Probabilistic Graphical Models</a>
+</li><li>Hastie, Tibshirani, Friedman, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a> (ESL) (PDF available online)
+</li><li>David J.C. MacKay <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.html">Information Theory, Inference, and Learning Algorithms</a> (PDF available online)
+ </li></ol>
+<p>
+
+The <a href="https://www2.stat.duke.edu/~sayan/561/2015/projects/final_project.tex"> final project TeX template</a> and <a href="https://www2.stat.duke.edu/~sayan/561/2015/projects/final_project.sty">final project style file</a> should be used in preparation of your final project report. Please follow the instructions and let me know if you have questions. We will have a poster session where you present your research project in lieu of a final exam.
+</p><p>
+
+This syllabus is <i>tentative</i>, and will almost surely be modified. Reload your browser for the current version.
+</p><p>
+
+
+</p><hr>
+
+<a name="fin"></a>
+<h3 align="center"><a name="fin">This years final projects</a></h3>
+<p>
+
+</p><ol>
+<li> <a href="https://github.com/JustinLovesCompsci/BigDataSalesPrediction">Predicting
+    sales of Rossman's stores</a></li>
+<li> <a href="https://github.com/JustinLovesCompsci/BigDataSalesPrediction">Gentrification Index Using Yelp Data</a></li>
+<li> <a href="https://github.com/YanlanLiu/STA561_FinalProject">Risk
+    estimates of tree mortality across species using Bayesian
+    hierarchical models </a></li>
+<li> <a href="https://github.com/lgscoding/MachineLearning">Classification
+    of TV Channels </a></li>
+<li> <a href="https://github.com/yilunzhou/sta561finalproject">Prediction
+    of Coupon Purchasing Behavior </a></li>
+<li> <a href="https://gitlab.oit.duke.edu/yk91/CardiacTissueClustering/tree/master">Classification of Cardiac Tissue Regions Based on Motion Profile in Ultrasound Images</a></li>
+<li> <a href="https://github.com/hsssajx/machine-learning-project-2015">Spectral Clustering of Chinese Herbal Medicine Network</a></li>
+<li> <a href="https://www.dropbox.com/sh/t4xhrzfvb6k3p7q/AAAczgoR_lwO_lc7JMzNJhOAa?dl=0">Use of Machine Learning in Predicting Bankruptcy</a></li>
+<li> <a href="https://github.com/xinliu10/STA561Final-Project">Distinguishing
+    malignant from benign breast tumors</a></li>
+<li> <a href="https://github.com/raghavsaboo/STA561-ML-Project">Detection
+    of Solar Panes from Satellite Imagery</a></li>
+<li> <a href="https://github.com/alicen2121/Stat">Yelp
+    Customer Review Bias Analysis through Linear Mixed Effect Models
+    with Natural Language Sentiment Polarity Scores</a></li>
+<li> <a href="http://emmachow.github.io/GIT/">Testing the CAPM Theory for German CDS Based on a Model with GARCH-type Volatilities and SSAEPD Errors</a></li>
+<li> <a href="https://github.com/dipeshgautam/STA561FinalProject">Bayesian Non-Parametrics and Dirichlet Process Clustering Techniques</a></li>
+<li> <a href="https://github.com/sophielee1/MachineLearningProject">Text
+    Analysis of News Articles (Building a Protest Dataset through
+    Machine Learning)</a></li>
+<li> <a href="https://github.com/yi-lu/MachineLearningFinalReport">Information
+    Popularity and Diffusion Size Prediction in Online Social Networks</a></li>
+<li> <a href="https://github.com/aw236/Sta561MachineLearning/tree/master">Cascading
+    Classifier for Face Detection</a></li>
+<li> <a href="http://kevinkdo.com/sta561/index.html">What's
+    Cooking ? Predicting Cuisines from Recipe Ingredients</a></li>
+<li> <a href="https://github.com/YuzhouSun/STA561_project">Analysing
+    Senator Community Structure from Roll Call Data</a></li>
+<li> <a href="https://github.com/aprilinsummer/STA561Final">Handwritten
+    Digits Recognition</a></li>
+<li> <a href="https://github.com/TengHu/ML_project">A Neural
+    Algorithm for Artistic Style</a></li>
+<li> <a href="https://github.com/juxtux/cs571D">Machine Learning
+    with Python</a></li>
+<li> <a href="https://github.com/cici7941/STA561_Final_Project">Predictive Modeling
+    of Bank Marketing for Term Deposit</a></li>
+<li> <a href="https://github.com/Emma25929/Final-Project">Air
+    Pollution Distribution Analysis for Beijing Haze</a></li>
+<li> <a href="https://github.com/ilanman/561_ML">Beyond SVD</a></li>
+<li> <a href="https://github.com/bb-mm/Legislation-Approval-Ratings-Prediction-via-Vote-Correlation">Legislation approval
+    ratings prediction via vote correlation</a></li>
+<li> <a href="https://github.com/ksian/ML2015FP">Categorical
+    Prediction of Song Popularity Using Topological Data Analysis</a></li>
+<li> <a href="https://github.com/StephenWuHao1212/COMPSCI-571-Machine-Learning">Movie Recommender System</a></li>
+<li> <a href="https://github.com/shariharan99/STA-561-Final-Project-Fall-2015">The
+    Effect of Racial Diversity on High School Graduation Rates</a></li>
+<li> <a href="https://github.com/JurijsNazarovs/MLFP_JNazarovs">Comparison
+    of feature selection methods in modeling resting metabolic rate</a></li>
+<li> <a href="http://mackyi.github.io/RandomizedPCR/">Randomization
+    as regularization</a></li>
+<li> <a href="https://github.com/vaishakhi1/Project">Designing an
+    optimum traffic signal system using reinforcement learning</a></li>
+<li> <a href="https://github.com/ckrapu/STA561/tree/master/temporary">Topic modeling
+    for community analysis and range estimation</a></li>
+<li> <a href="https://github.com/fishball343/MLProject-zw43-pjs27">Classifying
+    Soccer Matches in the English Premier League</a></li>
+<li> <a href="https://gitlab.cs.duke.edu/mark-nemecek/cs571_project/">Spectral
+    algorithms and tensor methods for learning in POMDPs</a></li>
+<li> <a href="https://github.com/cristianbo/ML_Project_2014WorldCupRecap">World
+    Cup Recap</a></li>
+<li> <a href="https://github.com/pjh4168789/Dim-reduction-on-digits">Dimension
+    Reduction Methods on Handwritten Digits Recognition </a></li>
+<li> <a href="https://github.com/swarnakr/ML_Drosophila.git">ML
+    methods for Drosophila Dorsal closure </a></li>
+<li> <a href="http://neeldesaistat561finalproject.weebly.com/">The
+    Animal Model for Censored Traits</a></li>
+<li> <a href="https://users.cs.duke.edu/~nisarg/SpectralClustering/">Spectral Clustering and Community Detection in
+Labeled Graph</a></li>
+<li> <a href="https://github.com/pendem/sta561_ml_pradeep_jessi_proj/tree/ml_proj">Cluster
+    Analysis of Endogenous Taxi Driver Schedule Patterns</a></li>
+<p></p><hr>
+
+<a name="syl"></a>
+<h3 align="center"><a name="syl">Syllabus</a></h3>
+<p>
+
+</p><ol>
+<li> (August 24th) Introduction and review: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 1 in notes</a></li><a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+</a><ul><a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+</a><li><a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf"> Optional: (video) Christopher Bishop </a><a href="http://scpro.streamuk.com/uk/player/Default.aspx?wid=7739">Embracing Uncertainty: The New Machine Intelligence</a></li>
+<li> Optional: (video) Sam
+  Roweis <a href="http://videolectures.net/mlss06tw_roweis_mlpgm/">Machine
+    Learning, Probability and Graphical Models, Part 1</a></li>
+<li> Optional: (video) Mikaela
+  Keller <a href="http://videolectures.net/bootcamp07_keller_bss/">
+  Basics of probability and statistics for statistical
+  learning</a></li>
+<li> Optional: Alan
+  Turing <a href="http://www.csee.umbc.edu/courses/471/papers/turing.pdf">Computing  Machinery and Intelligence</a></li>
+<li> Homework: Due
+  Sep. 7  <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/homework1.pdf">Assignment
+  1</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/solutions1.pdf">Solution 1</a> <ul>
+<li> Poisson
+  problem<a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/HW1.txt">
+    HW1.txt</a></li>
+<li> Gene expression
+  problem<a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/test.txt">
+    test.txt</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/train.txt">
+    train.txt</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/samples.txt">
+    samples.txt</a> </li>
+
+</ul></li>
+</ul>
+<br>  
+<li> (August 26th) No class <a></a>
+<ul>
+<li> Optional: (video) Michael Jordan <a href="http://videolectures.net/mlss09uk_jordan_bfway/">Bayesian or Frequentist: Which Are You?</a></li>
+</ul>
+<br>  
+</li><li> (August 31th) Linear regression, the proceduralist approach:
+<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 2 in notes</a></li>
+<ul>
+<li> Optional: Norman R. Draper and R. Craig van Nostrand <a href="http://www.stat.duke.edu/~sayan/561/2015/Ridge.pdf">Ridge regression</a></li>
+<li> Optional: Elements of Statistical
+  Learning <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf">Pages
+    61-67</a></li>
+<li> Optional: Proof that leave-k-out is
+  unbiased <a href="http://www.stat.duke.edu/~sayan/561/2015/class20.pdf">Lecture
+  notes based on: A. Luntz and V. Brailovsky. Technicheskaya Kibernetica, 3, 1969.</a></li>
+
+
+</ul>
+<br>  
+<li> (September 2nd) Bayesian motivation for proceduralist
+  approach: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 3 in notes</a></li>
+<ul>
+<li> Optional: (video) Alex Smola <a href="http://videolectures.net/mlss06au_smola_ef/">Exponential  Families</a></li>
+<li> Strongly suggested: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Useful properties of the multivariate normal in notes</a></li>
+<li> Optional*: Persi Diaconis and Donald Ylvisaker <a href="http://statweb.stanford.edu/~cgates/PERSI/papers/conjprior.pdf">Conjugate priors for exponential families </a></li>
+</ul>
+<br>
+
+<li> (September 7th) Bayesian linear regression:
+<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 4 in notes</a> </li>
+<ul>
+<li> Optional: (video) <a href="https://vimeo.com/14553953">LISA Short
+    Course: Regression Using Bayesian Statistics in R</a> </li>
+<li> Strongly
+  suggested: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+    Review of Functional analysis in notes</a></li>
+<li> Homework: Due
+  Sep. 23  <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw2/homework2.pdf">Assignment
+  2</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw2/solutions2.pdf">Solution 2</a> <ul>  <ul>
+<li> Gene expression
+  problem<a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/test.txt">
+    test.txt</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/train.txt">
+    train.txt</a> <a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw1/samples.txt">
+    samples.txt</a> </li>
+</ul></ul>
+<br>
+</li></ul>
+<li> (September 9th) Reproducing kernel Hilbert spaces: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 5 in notes</a> </li>
+<ul>
+<li> Optional: (video) Partha
+  Niyogi <a href="http://videolectures.net/mlss05us_niyogi_ikm/">Introduction
+    to Kernel Methods</a></li>
+<li> Optional*: Nachman
+  Aronszajn <a href="http://www.math.drexel.edu/~tolya/Aronszajn_RKHS.pdf">
+    Theory of Reproducing Kernels </a></li>
+</ul>
+<br>
+<li> (September 14th) Nonlinear regression: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture 6 in notes</a></li>
+<ul>
+<li> Optional: (video) Partha
+  Niyogi <a href="http://videolectures.net/mlss05us_niyogi_ikm/">Introduction
+    to Kernel Methods</a></li>
+<li> Optional: (video)  John
+  Shawe-Taylor <a href="http://videolectures.net/mlss09us_shawe-taylor_kmsvm/?q=ridge%20regression">Kernel
+    Methods and Support Vector Machines</a></li>
+<li> Strongly
+  suggested: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+    Review of convex optimization in notes</a></li>
+<li> Strongly suggested if you don't know Lagrange
+  Multipliers: <a href="http://homes.soic.indiana.edu/classes/spring2012/csci/b553-hauserk/constrained_optimization.pdf">Lagrange
+  multipliers and KKT conditions</a></li>
+</ul>
+<br>
+
+<li> (September 16th, 21st) Support Vector Machines:<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+    Lecture 7 in notes</a>
+<ul>
+<li> Optional: (video) Lieven Vandenberghe <a href="http://videolectures.net/mlss07_vandenberghe_copt/">Convex optimization</a></li>
+<li> Optional: (video) Stephen
+  Boyd <a href="http://videolectures.net/roks2013_boyd_language/?q=convex%20optimization">Domain Specific Languages for Convex Optimization</a></li>
+</ul>
+<br>
+</li>
+<li> (September 23rd) Regularized logistic regression:<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+    Lecture 8 in notes</a></li>  
+<ul>
+<li> Optional: (video) Nate
+  Otten <a href="https://www.youtube.com/watch?v=8-xkiGB28zc">Introduction
+    to conjugate gradient</a> </li>
+<li> Optional*: Andrew Stuart and Jochen
+  Voss <a href="http://m.seehuhn.de/papers/numlinalg.pdf">Matrix
+  analysis and algorithms pg. 75--83</a> 
+</li>
+<br>
+</ul>
+
+<li> (September 28th) Gaussian process regression:<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf"> Lecture 9 in notes</a> </li>
+<ul>
+<li> Optional: (video) Karl Rasmussen<a href="http://videolectures.net/mlss09uk_rasmussen_gp/"> Gaussian processes</a>
+</li><li> Optional: (video) David
+    MacKay <a href="http://videolectures.net/gpip06_mackay_gpb/">Gaussian
+      Process Basics</a></li>
+<li> Optional*:
+  J.L. Doob <a href="http://www.stat.duke.edu/~sayan/561/2015/doob.pdf">The
+  elementary Gaussian process</a></li>
+</ul>
+<br>
+
+<li> (September 30th) Sparse regression: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf"> Lecture 10 in notes</a> </li>
+<ul>
+<li> Optional: (video) Daniela Witten and Robert
+  Tibshirani<a href="https://www.youtube.com/watch?v=A5I1G1MfUmA"> The
+  Lasso</a></li>
+<li> Optional: (video) Trevor
+  Hastie<a href="https://www.youtube.com/watch?v=BU2gjoLPfDc&amp;feature=youtu.be">
+    glmnet package</a></li>
+<li>Homework Due Oct. 7
+<a href="http://www.stat.duke.edu/~sayan/561/2015/homeworks/hw3/homework3.pdf">Assignment
+  3</a> 
+</li></ul>
+
+<br>
+
+<li> (October 5th) The boosting hypothesis and Adaboost: 
+<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf"> Lecture 11 in notes</a></li>
+<ul>
+<li> Optional: (video) Rob
+  Schapire<a href="http://videolectures.net/mlss09us_schapire_tab/">
+  Theory and Applications of Boosting</a> </li>
+<li> Optional:  Leslie
+  Valiant<a href="http://web.mit.edu/6.435/www/Valiant84.pdf">
+  A Theory of the Learnable</a> </li>
+<li> Optional:  Rob
+  Schapire<a href="http://rob.schapire.net/papers/strengthofweak.pdf">The
+  Strength of Weak Learnability</a></li>
+</ul>
+<br>
+<li> (October 7th)  In class midterm</li>
+<br>
+<li> (October 14th, 19th) Statistical learning theory:
+<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf"> Lecture 12 in notes</a>
+<ul>
+<li> Optional: (video) Leon Bottou and Vladimir
+    Vapnik <a href="http://videolectures.net/mmdss07_bottou_fslt/">Foundations
+    of Statistical Learning</a>
+</li>
+<li> Optional: Vladimir Vapnik and
+  Ya. Chervonenkis <a href="https://courses.engr.illinois.edu/ece544na/fa2014/vapnik71.pdf">On
+  the Uniform Convegence of Relative Frequencies of Events to their
+  Probabilities</a></li>
+<li> Optional*: Michel
+  Talagrand <a href="http://www.stat.duke.edu/~sayan/561/2015/talagrand.pdf">The
+  Glivenko-Cantelli Problem</a></li>
+</ul>
+<br>
+</li><li> (October 19th, 21st) Mixture models and latent space models: 
+<a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+  Lecture 13 in notes</a> </li> 
+<ul>
+<li>Optional: (video) Victor Lavrenko <a href="https://www.youtube.com/watch?v=REypj2sy_5U">Expectation maximization</a>
+</li>
+<li> Optional: (slides) David
+  Sontag <a href="http://cs.nyu.edu/~dsontag/courses/ml12/slides/lecture21.pdf">Expectation maximization</a></li>
+<li> Optional*: Dempster, Laird,
+  Rubin<a href="http://www.stat.missouri.edu/~dsun/9720/EM_JRSSB.pdf">
+  Maximum Likelihood from Incomplete Data via the EM Algorithm</a>
+</li>
+</ul> 
+<br>
+
+<li> (October 26th, 28th) Latent  Dirichlet Allocation: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+  Lecture 14 in notes</a> </li> 
+  <ul>
+<li> Optional: (video) Dave
+  Blei <a href="http://videolectures.net/mlss09uk_blei_tm/"> Topic models</a>
+</li>
+<li> Optional: (video) John Novembre <a href="https://www.youtube.com/watch?v=PMzw7YVsZAc"> Methods for the analysis of population structure and admixture</a>
+</li>
+<li> Optional: (slides) Dave Blei <a href="https://www.cs.princeton.edu/~blei/blei-mlss-2012.pdf">
+  Probabilistic Topic Models</a>
+</li>
+<li> Optional: Pritchard, Stephens, Donnelly <a href="http://pritchardlab.stanford.edu/publications/structure.pdf">
+  Inference of Population Structure Using Multilocus Genotype Data</a>
+</li>
+<li> Optional: Blei, Ng, Jordan <a href="https://www.cs.princeton.edu/~blei/papers/BleiNgJordan2003.pdf">
+  Latent Dirichlet Allocation</a>
+</li>
+</ul>
+<br>
+<li> (November 2nd, 4th) Markov chain Monte Carlo: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+  Lecture 15 in notes</a> </li> 
+  <ul>
+<li> Optional: (video) Iain
+  Murray <a href="http://videolectures.net/mlss09uk_murray_mcmc/"> MCMC</a>
+</li>
+<li> Optional: (slides) Iain  Murray <a href="http://homepages.inf.ed.ac.uk/imurray2/teaching/09mlss/slides.pdf"> MCMC</a>
+</li>
+<li> Optional: Casella, George <a href="https://stat.duke.edu/~scs/Courses/Stat376/Papers/Basic/CasellaGeorge1992.pdf">
+  Explaining the Gibbs Sampler</a>
+</li>
+<li> Optional*: Levin, Peres, Wilmer <a href="http://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf">Markov
+  Chains and Mixing times</a>
+</li>
+<li> Optional*: Metropolis, Rosenbluth, Rosenbluth, Teller, Teller <a href="https://ssl.cs.dartmouth.edu/~gevorg/89/13W/Metropolis_MC.pdf">Equation of State Calculations by Fast Computing Machines </a>
+</li>
+</ul>
+<br>
+
+<li> (November 9th, 11th) Hidden Markov models  <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+  Lecture 16 in notes</a> </li> 
+<ul>
+<li> Optional: (video) Nando de Freitas <a href="https://www.youtube.com/watch?v=jY2E6ExLxaw"> HMMs</a>
+</li>
+<li> Optional: (slides) Eric Xing <a href="https://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/em-hmm.pdf"> HMMs</a>
+</li>
+<li> Optional: Rabiner <a href="http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/Reprints/tutorial%20on%20hmm%20and%20applications.pdf">A
+  Tutorial on Hidden Markov Models and. Selected Applications in
+  Speech Recognition. </a>
+</li>
+</ul>
+<br>
+<br>
+<li> (November 23rd) In class final </li> <ul>
+<br></ul>
+<li> (December 4th) Poster session (2pm) </li>  <ul>
+<br></ul>
+<li> (December 7th) Final projects due </li>  
+
+
+
+
+
+ 
+
+</ol></ol></body></html>
