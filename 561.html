@@ -1,0 +1,616 @@
+<!-- saved from url=(0062)http://www.genome.duke.edu/labs/engelhardt/courses/sta561.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html;
+                                                     charset=UTF-8"><title>STA561 Probabilistic Machine Learning, Spring 2020</title>
+    <style type="text/css">
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#6633FF" vlink="#007f0f">
+
+<h2 align="center">STA561 COMPSCI571 ECE682: Probabilistic Machine Learning: Spring 2020</h2>
+<table align="center">
+<tbody><tr><td>Prof:</td><td><a href="http://www.stat.duke.edu/~sayan/">Sayan Mukherjee</a></td>
+                 <td><a href="mailto:sayan@stat.duke.edu">
+                 <i>sayan</i></a><i>@stat.duke.edu</i></td><td></td>
+                 <td>OH: M 9:30-11:30</td><td>112 Old Chem</td></tr>                 
+<tr><td>TAs:</td> 
+tr><td></td><td> Ian Hill  </td><td> ian_hill160@duke.edu</td><td>OH:
+    Thursday 11:00-13:00 Old Chemistry 203B
+    </td><td></td><td></td></tr> 
+<tr><td></td><td> Rui Wang </td><td> rui.wang16@duke.edu</td><td>OH:
+    Friday 15:00-17:00 3431 CIEMAS.</td><td></td><td></td></tr> 
+<tr><td></td><td> Pengyu Cheng</td><td>
+    pengyu.cheng@duke.edu</td><td>OH: Wednesday 14:00-16:00 Gross Hall 352</td><td></td><td></td></tr>
+<tr><td></td><td>Yuren Zhou </td><td>yuren.zhou@duke.edu</td><td>OH:
+    Saturday 14:00-16:00 203B Old Chemistry</td><td></td><td></td></tr>
+<tr><td></td><td> Zheng Yuan</td><td>zheng.yuan@duke.edu</td><td>OH:
+    Tuesday 11:00-13:00 Old Chemistry 203B</td><td></td><td></td></tr>
+<tr><td></td><td> Yiwei Gong</td><td>yiwei.gong@duke.edu</td><td>OH:
+    Monday 11:30-13:30 Old Chemistry 203B  </td><td></td><td></td></tr>
+<tr><td>Class:</td><td>W/F Social Sciences 139
+    10:05-11:20am </td><td></td><td></td><td></td><td> </td></tr> 
+</tbody></table>
+
+
+
+<hr>
+<h3 align="center">Description</h3>
+Introduction to machine learning techniques. Graphical models, latent
+variable models, dimensionality reduction techniques, statistical learning, regression, kernel methods, state space models, HMMs,  MCMC. Emphasis is on applying these techniques to real data in a variety of application areas.
+<p>
+
+
+</p><hr>
+<h3 align="center">Academic Resource Center</h3>
+<p>
+The Academic Resource Center (ARC) offers free services to all
+students during their undergraduate careers at Duke.  Services include
+Learning Consultations, Peer Tutoring and Study Groups, ADHD/LD
+Coaching, Outreach Workshops, and more. Because learning is a process
+unique to every individual, we work with each student to discover and
+develop their own academic strategy for success at Duke. Contact the
+ARC to schedule an appointment. Undergraduates in any year, studying
+any discipline can benefit! 
+<br><br>
+211 Academic Advising Center Building, East Campus – behind
+Marketplace
+arc.duke.edu • theARC@duke.edu <mailto:theARC@duke.edu> • 919-684-5917
+</p><hr>
+
+</p><hr>
+
+</p><hr>
+<h3 align="center">Testing Center</h3>
+<p>
+This class will use the Testing
+Center to provide testing accommodations to undergraduates registered
+with and approved by the Student Disability Access Office (SDAO). The
+center operates by appointment only and appointments must be made at
+least 7 consecutive days in advance, but please schedule your
+appointments as far in advance as possible. You will not be able to
+make an appointment until you have submitted a Semester Request with
+the SDAO and it has been approved. So, if you have not done so
+already, promptly submit a Semester Request to the SDAO in order to
+make your appointment in time. For instructions on how to register
+with SDAO, visit their website at
+https://access.duke.edu/requests. For instructions on how to make an
+appointment at the Testing Center, visit their website at
+https://testingcenter.duke.edu.
+</p><hr>
+
+
+<b>News and information</b>
+
+</b></p><p>
+All students: we will have one poster session, April 15 from 10:00-12:00.  The poster
+session will be in  Gross Hall 3rd floor Ahmadieh Grand Hall. For a
+keynote version of an example poster see
+<a href="https://stat.duke.edu/~sayan/561/2015/texposter"> tex
+  example </a>
+  or <a href="https://stat.duke.edu/~sayan/561/2015/keyposter">
+  keynote example.</a>
+
+
+If you are auditing the course, we'd love to have
+you at the poster sessions (bring your research groups too!).
+</b></p><p>
+
+
+</p><hr>
+
+
+</p><hr>
+
+Statistics at the level of STA611 (Introduction to Statistical
+Methods) is encouraged, along with knowledge of linear algebra and
+multivariate calculus. <p>
+
+Course grade is based on a take home midterm (15%), 
+a take home final (35%), a final project (40%), and the poster session
+for the final project (10%). We will have homeworks but they will not
+be graded, we will post solutions.<p>
+
+There is a <a href="https://piazza.com/duke/spring2020/sta561">Piazza</a> course
+discussion page. Please direct questions about homeworks and other
+matters to that page. Otherwise, you can email the instructors (TAs
+and professor). Note that we are more likely to
+respond to the Piazza questions than to the email, and your classmates
+may respond too, so that is a good place to start.
+
+</p><p>
+
+
+The final projects should be in LaTeX. If you have never used LaTeX before, there are <a href="http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/">online
+tutorials</a>, <a href="http://pages.uoregon.edu/koch/texshop/">Mac
+GUIs</a>, and even <a href="http://www.sharelatex.com/">online
+compilers</a> that might help you. 
+
+</p><p>
+
+The course project will include a project proposal due mid-semester, a
+four page writeup of the project at the end of the semester, and an
+all-campus poster session where you will present your work. This is
+the most important part of the course; we strongly encourage you to
+come and discuss project ideas with us early and often throughout the
+semester. We expect some of these projects to become publications. You
+are absolutely permitted to use your current rotation or research
+project as course projects. Examples of previous projects can be
+found at <a
+href="https://stat.duke.edu/~sayan/561/2019/Proj.html">projects</a>.
+
+</p><p>
+
+The programming assignments in this course can be done in any language
+but we will be doing simulations in <a href="https://pytorch.org/tutorials/">PyTorch.</a>
+
+</p><p>
+
+The course will follow my lecture notes (this will be updated as the
+course
+proceeds), <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Lecture
+    Notes</a>.
+
+Some other texts and notes that may be useful include:
+</p><ol>
+<li> Kevin  Murphy, <a href="http://www.cs.ubc.ca/~murphyk/MLbook/index.html">
+Machine Learning: a probabilistic perspective</a>
+</li><li>Michael Lavine, <a href="https://www.math.umass.edu/~lavine/Book/book.html">Introduction to Statistical Thought</a> (an introductory statistical textbook with plenty of R examples, and it's online too)
+</li><li>Chris Bishop, <a href="http://research.microsoft.com/en-us/um/people/cmbishop/PRML/index.htm">Pattern Recognition and Machine Learning</a>
+</li><li>Daphne Koller &amp; Nir Friedman, <a href="http://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193">Probabilistic Graphical Models</a>
+</li><li>Hastie, Tibshirani, Friedman, <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a> (ESL) (PDF available online)
+</li><li>David J.C. MacKay <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.html">Information Theory, Inference, and Learning Algorithms</a> (PDF available online)
+</li>
+<li>Aston Zhang, Zack Lipton, Mu Li, Alex Smola <a href="https://classic.d2l.ai/">Dive into Deep Learning</a>
+ </li></ol>
+<p>
+
+The <a href="projects/final_project.tex"> final project TeX template</a> and <a href="projects/final_project.sty">final project style file</a> should be used in preparation of your final project report. Please follow the instructions and let me know if you have questions.
+</p><p>
+
+This syllabus is <i>tentative</i>, and will almost surely be modified. Reload your browser for the current version.
+</p><p>
+
+
+</p><hr>
+
+<a name="syl"></a>
+<h3 align="center"><a name="syl">Syllabus</a></h3>
+<p>
+
+</p><ol>
+<li> (Jan 15th) Introduction and review: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec1.pdf">Lecture</li>
+<ul>
+<li> Optional: (video) Christopher Bishop <a href="http://scpro.streamuk.com/uk/player/Default.aspx?wid=7739">Embracing Uncertainty: The New Machine Intelligence</a></li>
+<li> Optional: (video) Sam
+  Roweis <a href="http://videolectures.net/mlss06tw_roweis_mlpgm/">Machine
+    Learning, Probability and Graphical Models, Part 1</a></li>
+<li> Optional: (video) Mikaela
+  Keller <a href="http://videolectures.net/bootcamp07_keller_bss/">
+  Basics of probability and statistics for statistical
+  learning</a></li>
+<li> Optional: Alan
+  Turing <a href="http://www.csee.umbc.edu/courses/471/papers/turing.pdf">Computing  Machinery and Intelligence</a></li>
+</ul></li>
+</ul>
+<BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab1_handout.pdf">Handout for Lab 1</a>  </b>
+<BR>
+<BR>  
+</li><li> (Jan 17th) Linear regression, the proceduralist approach:
+<a href="http://www.stat.duke.edu/~sayan/561/2019/lec2.pdf">Lecture</a></li>
+<ul>
+<li> Optional: Norman R. Draper and R. Craig van Nostrand <a href="http://www.stat.duke.edu/~sayan/561/2015/Ridge.pdf">Ridge regression</a></li>
+<li> Optional: Elements of Statistical
+  Learning <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf">Pages
+    61-67</a></li>
+<li> Optional: (video) Michael Jordan <a href="http://videolectures.net/mlss09uk_jordan_bfway/">Bayesian or Frequentist: Which Are You?</a></li>
+<li> Optional: Proof that leave-k-out is
+  unbiased <a href="http://www.stat.duke.edu/~sayan/561/2015/class20.pdf">Lecture
+  notes based on: A. Luntz and V. Brailovsky. Technicheskaya Kibernetica, 3, 1969.</a></li>
+</ul>
+<BR>  
+</li><li> (Jan 22nd) Bayesian motivation for proceduralist
+  approach: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec3.pdf">Lecture</a></li>
+<ul>
+<li> Optional: (video) Alex Smola <a href="http://videolectures.net/mlss06au_smola_ef/">Exponential  Families</a></li>
+<li> Strongly suggested: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">Useful properties of the multivariate normal in notes</a></li>
+<li> Optional*: Persi Diaconis and Donald Ylvisaker <a href="http://statweb.stanford.edu/~cgates/PERSI/papers/conjprior.pdf">Conjugate priors for exponential families </a></li>
+</ul>
+<BR>
+</li>
+<li> (Jan 24th) Bayesian linear regression:
+<a href="http://www.stat.duke.edu/~sayan/561/2019/lec4.pdf">Lecture</a> </li>
+<ul>
+<li> Optional: (video) <a href="https://vimeo.com/14553953">LISA Short
+    Course: Regression Using Bayesian Statistics in R</a> </li>
+<li> Strongly
+  suggested: <a href="http://www.stat.duke.edu/~sayan/561/2015/stat_ml.pdf">
+    Review of Functional analysis in notes</a></li>
+  </ul></ul>
+  </ul>
+<BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/HW1.pdf">HW
+    1  </a> <a href="http://www.stat.duke.edu/~sayan/561/2019/Advertisement.csv">Data
+    for HW
+    1</a> <a href="http://www.stat.duke.edu/~sayan/561/2019/HW1sol.pdf">
+    HW
+    1 solutions  </a>  </b>
+<BR>
+<BR>
+<li> (Jan 29th) Regularized logistic
+  regression:<a href="http://www.stat.duke.edu/~sayan/561/2019/lec8.pdf">
+  Lecture</a> and <a href="http://www.stat.duke.edu/~sayan/561/2019/SVM.pdf">  
+    Support Vector Machines</a>
+    and <a href="http://www.stat.duke.edu/~sayan/561/2019/optim.pdf">optimization notes</a> 
+<ul>
+<li> Optional: (video) Nate
+  Otten <a href="https://www.youtube.com/watch?v=8-xkiGB28zc">Introduction
+    to conjugate gradient</a> </li>
+<li> Optional*: Andrew Stuart and Jochen
+  Voss <a href="http://m.seehuhn.de/papers/numlinalg.pdf">Matrix
+  analysis and algorithms pg. 75--83</a> 
+</li>
+<BR>
+</ul>
+</li>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab2_handout.pdf">Handout for Lab 2</a>  </b>
+<BR>
+<BR> 
+<li> (Jan 31st) Gaussian process regression:<a href="http://www.stat.duke.edu/~sayan/561/2019/lec9.pdf"> Lecture</a> </li>
+<ul>
+<li> Optional: (video) Karl Rasmussen<a href="http://videolectures.net/mlss09uk_rasmussen_gp/"> Gaussian processes</a>
+</li><li> Optional: (video) David
+    MacKay <a href="http://videolectures.net/gpip06_mackay_gpb/">Gaussian
+      Process Basics</a></li>
+</li><li> Optional*:
+  J.L. Doob <a href="http://www.stat.duke.edu/~sayan/561/2015/doob.pdf">The
+  elementary Gaussian process</a></li>
+</ul>
+<BR>
+</li>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab3_handout.pdf">Handout for Lab 3</a>  </b>
+<BR>
+<BR>
+<li> (Feb 5th) Sparse regression: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec10.pdf"> Lecture</a> </li>
+<ul>
+<li> Optional: (video) Daniela Witten and Robert
+  Tibshirani<a href="https://www.youtube.com/watch?v=A5I1G1MfUmA"> The
+  Lasso</a></li>
+<li> Optional: (video) Trevor
+  Hastie<a href="https://www.youtube.com/watch?v=BU2gjoLPfDc&feature=youtu.be">
+    glmnet package</a></li>
+</ul>
+</li>
+<BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/HW2.pdf">HW
+    2  </a> <a href="http://www.stat.duke.edu/~sayan/561/2019/HW2_geyser.csv">Dataset 1
+    for HW
+    2</a> <a href="http://www.stat.duke.edu/~sayan/561/2019/HW2_voting.csv">Dataset 2
+    for HW 2</a> </b>
+<BR>
+<BR>
+<li> (Feb 7th) Mixture models and latent space models I: 
+<a href="http://www.stat.duke.edu/~sayan/561/2019/lec13.pdf">
+  Lecture</a> </li> 
+<ul>
+<li>Optional: (video) Victor Lavrenko <a href="https://www.youtube.com/watch?v=REypj2sy_5U">Expectation maximization</a>
+</li>
+<li> Optional: (slides) David  Sontag <a href="http://cs.nyu.edu/~dsontag/courses/ml12/slides/lecture21.pdf">Expectation maximization</a></li>
+<li> Optional*: Dempster, Laird,
+  Rubin<a href="http://www.stat.missouri.edu/~dsun/9720/EM_JRSSB.pdf">
+  Maximum Likelihood from Incomplete Data via the EM Algorithm</a>
+</li>
+</ul> 
+<BR><li> (Feb 12th) Mixture models and latent space models II: 
+<a href="http://www.stat.duke.edu/~sayan/561/2019/lec13.pdf">
+  Lecture</a> </li> 
+<ul>
+<li>Optional: (video) Victor Lavrenko <a href="https://www.youtube.com/watch?v=REypj2sy_5U">Expectation maximization</a>
+</li>
+<li> Optional: (slides) David Sontag <a href="http://cs.nyu.edu/~dsontag/courses/ml12/slides/lecture21.pdf">Expectation maximization</a></li>
+<li> Optional*: Dempster, Laird,
+  Rubin<a href="http://www.stat.missouri.edu/~dsun/9720/EM_JRSSB.pdf">
+  Maximum Likelihood from Incomplete Data via the EM Algorithm</a>
+</li>
+</ul> 
+<BR>
+</li>
+</ul> 
+<BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab4_handout.pdf">Handout for Lab 4</a>  </b>
+<BR>
+<BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/PracMid.pdf">Practice midterm</a>  </b>
+<BR>
+<BR>
+</li>
+<li> (Feb 14th) Latent  Dirichlet Allocation I: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec14.pdf">
+  Lecture</a> </li> 
+  <ul>
+<li> Optional: (video) Dave
+  Blei <a href="http://videolectures.net/mlss09uk_blei_tm/"> Topic models</a>
+</li>
+<li> Optional: (video) John Novembre <a href="https://www.youtube.com/watch?v=PMzw7YVsZAc"> Methods for the analysis of population structure and admixture</a>
+</li>
+<li> Optional: (slides) Dave Blei <a href="http://www.cs.columbia.edu/~blei/talks/Blei_ICML_2012.pdf">
+  Probabilistic Topic Models</a>
+</li>
+</li>
+<li> Optional: Pritchard, Stephens, Donnelly <a href="http://pritchardlab.stanford.edu/publications/structure.pdf">
+  Inference of Population Structure Using Multilocus Genotype Data</a>
+</li>
+<li> Optional: Blei, Ng, Jordan <a href="https://www.cs.princeton.edu/~blei/papers/BleiNgJordan2003.pdf">
+  Latent Dirichlet Allocation</a>
+</li>
+</ul>
+  <BR>
+</li>
+<li> (Feb 19th) Latent  Dirichlet Allocation II: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec14.pdf">
+  Lecture</a> </li> 
+  <ul>
+<li> Optional: (video) Dave
+  Blei <a href="http://videolectures.net/mlss09uk_blei_tm/"> Topic models</a>
+</li>
+<li> Optional: (video) John Novembre <a href="https://www.youtube.com/watch?v=PMzw7YVsZAc"> Methods for the analysis of population structure and admixture</a>
+</li>
+<li> Optional: (slides) Dave Blei <a href="http://www.cs.columbia.edu/~blei/talks/Blei_ICML_2012.pdf">
+Probabilistic Topic Models</a>
+</li>
+<li> Optional: Pritchard, Stephens, Donnelly <a href="http://pritchardlab.stanford.edu/publications/structure.pdf">
+  Inference of Population Structure Using Multilocus Genotype Data</a>
+</li>
+<li> Optional: Blei, Ng, Jordan <a href="https://www.cs.princeton.edu/~blei/papers/BleiNgJordan2003.pdf">
+  Latent Dirichlet Allocation</a>
+</li>
+</ul>
+  <BR>
+<b>  (Feb 14-Feb 20) Take home midterm </b>
+  <BR>
+  <BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab5_handout.pdf">Handout for Lab 5</a>  </b>
+<BR>
+<BR>
+<li> (Feb 21st) Markov chain Monte Carlo I: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec15.pdf">
+  Lecture</a> </li> 
+  <ul>
+<li> Optional: (video) Iain
+  Murray <a href="http://videolectures.net/mlss09uk_murray_mcmc/"> MCMC</a>
+</li>
+<li> Optional: (slides) Iain  Murray <a href="http://homepages.inf.ed.ac.uk/imurray2/teaching/09mlss/slides.pdf"> MCMC</a>
+</li>
+<li> Optional: Casella, George <a href="https://stat.duke.edu/~scs/Courses/Stat376/Papers/Basic/CasellaGeorge1992.pdf">
+  Explaining the Gibbs Sampler</a>
+</li>
+<li> Optional*: Levin, Peres, Wilmer <a href="http://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf">Markov
+  Chains and Mixing times</a>
+</li>
+<li> Optional*: Metropolis, Rosenbluth, Rosenbluth, Teller, Teller <a href="https://ssl.cs.dartmouth.edu/~gevorg/89/13W/Metropolis_MC.pdf">Equation of State Calculations by Fast Computing Machines </a>
+</li>
+</ul>
+<BR><li> (Feb 26th) Markov chain Monte Carlo II: <a href="http://www.stat.duke.edu/~sayan/561/2019/lec15.pdf">
+  Lecture</a> </li> 
+  <ul>
+<li> Optional: (video) Iain
+  Murray <a href="http://videolectures.net/mlss09uk_murray_mcmc/"> MCMC</a>
+</li>
+<li> Optional: (slides) Iain  Murray <a href="http://homepages.inf.ed.ac.uk/imurray2/teaching/09mlss/slides.pdf"> MCMC</a>
+</li>
+<li> Optional: Casella, George <a href="https://stat.duke.edu/~scs/Courses/Stat376/Papers/Basic/CasellaGeorge1992.pdf">
+  Explaining the Gibbs Sampler</a>
+</li>
+<li> Optional*: Levin, Peres, Wilmer <a href="http://pages.uoregon.edu/dlevin/MARKOV/markovmixing.pdf">Markov
+  Chains and Mixing times</a>
+</li>
+<li> Optional*: Metropolis, Rosenbluth, Rosenbluth, Teller, Teller <a href="https://ssl.cs.dartmouth.edu/~gevorg/89/13W/Metropolis_MC.pdf">Equation of State Calculations by Fast Computing Machines </a>
+</li>
+  </ul>
+    <BR>
+<b> <a href="http://www.stat.duke.edu/~sayan/561/2019/Lab6_handout.pdf">Handout for Lab 6</a>  </b>
+<BR>
+<BR>
+<li> (Feb 28th) Hidden Markov models
+  II  <a href="http://www.stat.duke.edu/~sayan/561/2019/lec16.pdf">
+  Lecture </a> and  <a href="http://www.stat.duke.edu/~sayan/561/2020/HMM-notes-scanned.pdf">
+  more lecture notes</a> </li> </li>
+<ul>
+<li> Optional: (video) Nando de Freitas <a href="https://www.youtube.com/watch?v=jY2E6ExLxaw"> HMMs</a>
+</li>
+<li> Optional: (slides) Eric Xing <a href="https://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/em-hmm.pdf"> HMMs</a>
+</li>
+<li> Optional: Rabiner <a href="http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/Reprints/tutorial%20on%20hmm%20and%20applications.pdf">A
+  Tutorial on Hidden Markov Models and. Selected Applications in
+  Speech Recognition. </a>
+</li>
+</ul>
+<BR>
+<li> (March 4th) Dimension reduction and embeddings I<a href="http://www.stat.duke.edu/~sayan/561/2019/lec17.pdf">
+  Lecture</a> </li> 
+  <ul>
+<li> Optional: (video) Nando de Freitas <a href="https://www.youtube.com/watch?v=jY2E6ExLxaw"> HMMs</a>
+</li>
+<li> Optional: (slides) Eric Xing <a href="https://www.cs.cmu.edu/~epxing/Class/10701-08s/recitation/em-hmm.pdf"> HMMs</a>
+</li>
+<li> Optional: Rabiner <a href="http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/Reprints/tutorial%20on%20hmm%20and%20applications.pdf">A
+  Tutorial on Hidden Markov Models and. Selected Applications in
+  Speech Recognition. </a>
+</li>
+</ul>
+<BR>
+<li> (March 4th) Dimension reduction and embeddings I<a href="http://www.stat.duke.edu/~sayan/561/2019/lec17.pdf">
+  Lecture</a> </li> 
+<ul>
+  <li> Optional: (video) Juan
+  Orduz <a href="https://www.youtube.com/watch?v=U31TIICsHiA">Laplacian eigenmaps</a>
+  </li>
+  <li> Optional: (video) Yann
+  LeCun <a href="https://www.youtube.com/watch?v=UGPT64wo7lU">Graph emebddings</a>
+      </li>
+    <li> Optional: (video) Laurens van der Maaten <a href="https://www.youtube.com/watch?v=RJVL80Gg3lA">t-SNE</a>
+  </li>
+    <li> Optional: (video) Konstantinos
+     Perifanos <a href="https://www.youtube.com/watch?v=6xPnEh_tJEc">Word embeddings</a>
+    </li>
+  <li> Optional: Dasgupta and Gupta
+  <a href="http://www.cs.cmu.edu/~anupamg/papers/jl.pdf"> Johnson
+  Lindenstrauss Lemma</a>
+        </li>    
+</ul>
+<BR><li> (March 6th) Dimension reduction and embeddings II<a href="http://www.stat.duke.edu/~sayan/561/2019/lec17.pdf">
+  Lecture</a> </li> 
+<ul>
+  <li> Optional: (video) Juan
+  Orduz <a href="https://www.youtube.com/watch?v=U31TIICsHiA">Laplacian eigenmaps</a>
+  </li>
+  <li> Optional: (video) Yann
+  LeCun <a href="https://www.youtube.com/watch?v=UGPT64wo7lU">Graph emebddings</a>
+      </li>
+    <li> Optional: (video) Laurens van der Maaten <a href="https://www.youtube.com/watch?v=RJVL80Gg3lA">t-SNE</a>
+  </li>
+    <li> Optional: (video) Konstantinos
+     Perifanos <a href="https://www.youtube.com/watch?v=6xPnEh_tJEc">Word embeddings</a>
+    </li>
+  <li> Optional: Dasgupta and Gupta
+  <a href="http://www.cs.cmu.edu/~anupamg/papers/jl.pdf"> Johnson
+  Lindenstrauss Lemma</a>
+        </li>    
+</ul>
+<BR>
+<li> (March 18th) Neural networks I <a href="http://www.stat.duke.edu/~sayan/561/2019/lec18.pdf">
+    Lecture</a> </li>
+<ul>
+   <li>
+   Trivedi and Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture3_pauses.pdf">Backprop
+       1</a> </li>
+  <li>
+   Trivedi and Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture4_pauses.pdf">Backprop
+      2</a> </li>
+<li>   Trivedi and
+      Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture7_pauses.pdf">Convolutional
+    nets</a> </li>
+<li>
+   Le Cun et
+   al <a href="https://papers.nips.cc/paper/293-handwritten-digit-recognition-with-a-back-propagation-network.pdf">LeNet</a> </li>
+<li>
+Krizhevsky et
+al <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a> </li>
+<li>
+Leung <a href="https://www.youtube.com/watch?v=bNb2fEVKeEo">Lecture
+    on convolutional nets</a> </li>
+</ul>
+<BR>
+<li> (March 20th) Neural networks II <a href="http://www.stat.duke.edu/~sayan/561/2019/lec18.pdf">
+    Lecture</a> </li>
+<ul>
+   <li>
+   Trivedi and Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture3_pauses.pdf">Backprop
+       1</a> </li>
+  <li>
+   Trivedi and Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture4_pauses.pdf">Backprop
+      2</a> </li>
+<li>   Trivedi and
+      Kondor <a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture7_pauses.pdf">Convolutional
+    nets</a> </li>
+<li>
+<li>
+   Le Cun et
+   al <a href="https://papers.nips.cc/paper/293-handwritten-digit-recognition-with-a-back-propagation-network.pdf">LeNet</a> </li>
+<li>
+Krizhevsky et
+al <a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">AlexNet</a> </li>
+<li>
+Leung <a href="https://www.youtube.com/watch?v=bNb2fEVKeEo">Lecture
+    on convolutional nets</a> </li>
+</ul>
+<BR>
+<li> (March 25th) Variational methods and Generative Adversarial Networks I<a href="http://www.stat.duke.edu/~sayan/561/2019/lec19.pdf">
+  Lecture</a> </li> </li>
+<ul>
+</ul>
+<BR>
+<li> (March 27th) Variational methods and Generative Adversarial Networks II<a href="http://www.stat.duke.edu/~sayan/561/2019/lec20.pdf">
+  Lecture</a> </li> </li>
+<ul>
+</ul>
+<BR>
+<li> (April 1st) Optimization I <a href="http://www.stat.duke.edu/~sayan/561/2019/lec20.pdf">
+  Lecture</a> </li> </li>
+<ul>
+ <li> Optional: (video) Sham Kakade
+       <a href="https://www.youtube.com/watch?v=_UFGB2MBo4o/">Accelerating Stochastic Gradient Descent</a>
+    </li>
+    <li> Optional: Leon Bottou
+      <a href="https://leon.bottou.org/slides/largescale/lstut.pdf"> Large Scale Machine Learning</a></li>
+    <li> Optional: John
+    Canny<a href="https://bcourses.berkeley.edu/courses/1453965/files/69573148/download?verifier=XngOkhZvNZpG1OedI7quhUn10HEpW4kf4Gu0HBqQf">
+        Stochastic Gradient Descent, Slide 49 is great</a></li>
+  <li> Optional: Trevedi and Kondor<a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture6_pauses.pdf">
+        Stochastic Gradient Descent</a></li>
+</ul>
+<BR><li> (April 3rd) Optimization II <a href="http://www.stat.duke.edu/~sayan/561/2019/lec20.pdf">
+  Lecture</a> </li> </li>
+  <ul>
+ <li> Optional: (video) Sham Kakade
+       <a href="https://www.youtube.com/watch?v=_UFGB2MBo4o/">Accelerating Stochastic Gradient Descent</a>
+    </li>
+    <li> Optional: Leon Bottou
+      <a href="https://leon.bottou.org/slides/largescale/lstut.pdf"> Large Scale Machine Learning</a></li>
+    <li> Optional: John
+    Canny<a href="https://bcourses.berkeley.edu/courses/1453965/files/69573148/download?verifier=XngOkhZvNZpG1OedI7quhUn10HEpW4kf4Gu0HBqQf">
+        Stochastic Gradient Descent, Slide 49 is great</a></li>
+  <li> Optional: Trevedi and Kondor<a href="https://ttic.uchicago.edu/~shubhendu/Pages/Files/Lecture6_pauses.pdf">
+        Stochastic Gradient Descent</a></li>
+</ul>
+ <BR> 
+<li> (April 8th) Computational differentiation <a href="">
+    Lecture</a> </li>
+<ul>
+ <li> Optional: Baydin, Pearlmutter, Radul, and Siskind
+       <a href="https://arxiv.org/pdf/1502.05767.pdf">Automatic Differentiation</a>
+ </li>
+    <li> Optional: Maclaurin, Duvenaud, and Adams
+      <a href="https://arxiv.org/abs/1502.03492"> Reversible learning with exact arithmetic</a></li>
+    <li> Optional:
+      Kathura <a href="https://towardsdatascience.com/getting-started-with-pytorch-part-1-understanding-how-automatic-differentiation-works-5008282073ec">Getting
+        Started with PyTorch </a></li>
+ <li> Optional:
+      Altexsoft <a href="https://www.altexsoft.com/blog/datascience/choosing-an-open-source-machine-learning-framework-tensorflow-theano-torch-scikit-learn-caffe/">
+      Machine Learning Libraries </a></li>
+</ul>
+<BR><li> (April 10th) Statistical learning theory I:
+  <a href="http://www.stat.duke.edu/~sayan/561/2019/lec12.pdf">
+    Lecture</a>
+  <ul>
+    <li> Optional: (video) Leon Bottou and Vladimir
+      Vapnik <a href="http://videolectures.net/mmdss07_bottou_fslt/">Foundations
+        of Statistical Learning</a>
+    </li>
+  </li>
+    <li> Optional: Vladimir Vapnik and
+        Ya. Chervonenkis
+      <a href="https://courses.engr.illinois.edu/ece544na/fa2014/v\
+         apnik71.pdf">On
+          the Uniform Convegence of Relative Frequencies of Events to
+        their
+        Probabilities</a></li>
+    <li> Optional*: Michel
+      Talagrand <a href="http://www.stat.duke.edu/~sayan/561/2015/talagrand.pdf">The
+        Glivenko-Cantelli Problem</a></li>
+  </ul>
+ <BR> 
+<li> (April 15th) Computational differentiation <a href="">
+    Lecture</a> </li>
+<BR>
+<BR>
+<li> (April 17th) Poster session (10:05-12:00) in Gross Hall</li> 
+<BR></ul></li>
+<b>(April 18-28) Take home final </b>
+<BR><BR>
+<b>  (May 2nd) Final projects due </b>
+ 
+</body></html>
+
+
+
+
+
+
