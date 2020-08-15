@@ -126,13 +126,6 @@ to use git and github</p></li>
   
  
 
-There is a <a href="https://piazza.com/duke/spring2020/sta561">Piazza</a> course
-discussion page. Please direct questions about homeworks and other
-matters to that page. Otherwise, you can email the instructors (TAs
-and professor). Note that we are more likely to
-respond to the Piazza questions than to the email, and your classmates
-may respond too, so that is a good place to start.
-
 <hr>
 <h3 align="center">Syllabus</h3>
 
@@ -153,14 +146,181 @@ mathematical statistics at the level of STA 250 or STA611. Linear algebra
 and basics of linear regression are also considered
 prerequisite.</p>
 
+<p>The course goals are as follows:</p>
 
+<ol>
+<li>Understand the different philosophical approaches to prediction and
+statistical inference (Bayesian and frequentists)</li>
+<li>Build a solid foundation for the statistical theory for predictive
+modelling and inference</li>
+<li>Build appropriate statistical models,
+perform data analysis using appropriate software, and communicate
+results without use of statistical jargon using reproducible methods.</li>
+<li>Use of simulation to characterize properties
+of statistical methods.</li>
+</ol>
 
-<b>Course goals & objectives:</b> <br>
-This course introduces students to concepts and techniques of Classical and Bayesian approaches for modern regression and predictive modelling. The course will blend theory and application using a range of examples.
+<h4 id="topics">Topics</h4>
 
-<br>It is expected that students have either taken STA 601 (STA 360 or STA602L or equivalent), are co-registed, or are familiar with some basics of Bayesian analysis! We will introduce JAGS to simplify modelling and use a range of R packages to support computing.
-<br>All students should be comfortable with mathematical statistics at the level of STA 250 or STA611. Linear algebra and basics of linear regression are also considered prerequisite. 
-<br> 
+<p>Course topics will be drawn (but subject to change) from</p>
+
+<ul>
+<li>Introduction to Statistical Learning</li>
+<li>Exploratory Data Analysis</li>
+<li>Multiple Regression</li>
+<li>Residual Analysis &amp; Model Checking</li>
+<li>Bayesian Regression</li>
+<li>Outliers and Robust Regression</li>
+<li>Model Selection and Bayesian Model Averaging</li>
+<li>Shrinkage and Hierarchical Models</li>
+<li>Models for Count Data (Poisson Regression)</li>
+<li>Logistic Regression and Classification</li>
+<li>Classification and Regression Trees (and Forests)</li>
+<li>Generalized Additive Models</li>
+<li>Bayesian Nonparametric Regression</li>
+<li>Ensemble Methods</li>
+<li>Decision and Inference in Modern Regression</li>
+</ul>
+
+<hr />
+
+<h3 id="grading">Grading:</h3>
+
+<div style="padding-left:2em;padding-top:1em;">
+<table style="width:400px;">
+<tr> <td> Homework              </td> <td> 25% </td></tr>
+<tr> <td> Midterm I        </td> <td> 20% </td></tr>
+<tr> <td> Midterm II         </td> <td> 20% </td></tr>
+<tr> <td> Data Analysis Project Part I  </td> <td> 15% </td></tr>
+<tr> <td> Data Analysis Project Part II  </td> <td> 15% </td></tr>
+<tr> <td> Participation        </td> <td> 5% </td></tr>
+
+</table>
+</div>
+
+<p>Grades may be curved at the end of the semester. Cumulative numerical averages of 90 - 100 are guaranteed at least an A-, 80 - 89 at least a B-, and 70 - 79 at least a C-, however the exact ranges for letter grades will be determined after the final exam. The more evidence there is that the class has mastered the material, the more generous the curve will be.</p>
+
+<hr />
+
+<h3 id="statistical-analysis">Statistical Analysis:</h3>
+
+<p>We will use R as a programming language for data analysis and use
+  existing packages written in R to support the course in addition to
+  Bayesian computation using JAGS.  We will  provide access
+  to a dedicated server running RStudio Pro so that  all students  will
+  have a unified environment. You may wish to install R and
+  RStudio to run code on your own desktop or laptop.  We will cover instruction of R in the labs/class.</p>
+
+<h3 id="homework">Homework:</h3>
+
+<p>The objective of the problem sets is to help you develop a more in-depth understanding of the material and help you prepare for exams and projects. Grading will be based on completeness as well as accuracy.
+The assignments  will be a mix of individual and coding team based
+assignments.</p>
+
+<p><strong>Submission instructions:</strong> You will submit your HW on Sakai by
+  uploading a PDF or through the Course Organization repo on
+  github for your team.</p>
+
+<p>All assignments will be time stamped and late work will be penalized based on this time stamp (see late work policy below).</p>
+
+<ul>
+<li><p>Missed/Late work policy for Homework:</p>
+
+<ul>
+<li>No Late HW</li>
+<li>We will drop the lowest Homework Score</li>
+</ul></li>
+
+<li><p>Regrade requests must be made <strong>within 3 days</strong> of when the
+assignment is returned, and must be submitted in writing. These will
+be honored if points were tallied incorrectly, or if you feel your
+answer is correct but it was marked wrong. No regrade will be made
+to alter the number of points deducted for a mistake. There will be
+no grade changes after the final exam for Homework.</p></li>
+</ul>
+
+<hr />
+
+<h3 id="final-data-analysis-project">Final Data Analysis Project</h3>
+
+<p>The objective of the Project is to give you real-world
+research experience using real data and statistical methods.  You will
+use all (relevant) techniques learned in this class or explore
+additional advanced material to solve a problem, explore its
+properties (either analytically or through simulation) and present it
+using reporducible methods.</p>
+
+<p>Further details  will be provided as due dates approach.</p>
+
+<hr />
+
+<h3 id="exams">Exams:</h3>
+
+<p>There will be two midterms. See the Course Schedule for dates and times of the exams. The exam is closed book
+ and you are allowed to use one sheet of notes (``cheat sheet&rdquo;) for each
+exam. This sheet must be no larger than 8 <sup>1</sup>&frasl;<sub>2</sub> x 11,
+and <strong>must be prepared by you</strong>. You may use both sides of the sheet
+and can write as small as you wish.</p>
+
+<h4 id="missed-exams">Missed Exams</h4>
+
+<p>There will be no makeup exams.  If a student misses one exam for any
+reason, their score will be imputed based on the previous or future
+exam.  Missing both exams will result in a grade of 0 on the exams.</p>
+
+<h4 id="a-name-exams-a-key-dates"><a name="exams"></a>Key Dates:</h4>
+
+<p>See the Course Schedule for dates for the Midterms and other
+assignments.  If MSS students have more than 3 exams in one week,
+please notify me as soon as possible, so that we may adjust timing if
+possible as early in the semester as possible.</p>
+
+<p>The Final Exam Slot, listed in the Course Calendar, will be used for final presentations of the Data Analysis Project.</p>
+
+<hr />
+
+<h3 id="attendance-participation">Attendance &amp; Participation:</h3>
+
+<p>You are expected to be present at class meeting and actively participate in the discussion. Your attendance and participation
+during class, as well as your activity on the discussion forum on piazza, commits on github, as well as participation questions 
+(this will be descibed as the semester progresses) will make up 5% of your grade in this class. 
+  .</p>
+
+<hr />
+
+<h3 id="email-forum-piazza">Email &amp; Forum (Piazza):</h3>
+
+<p>We will be using
+<a href="https://piazza.com/duke/fall2018/sta52101f20/home" target="_blank">Piazza</a> for class
+discussion. The system is highly catered to getting you help fast and
+efficiently from classmates, the TA, and myself. Rather than emailing
+questions to the teaching staff, I encourage you to post your
+questions on Piazza (peer answers earn participation points!). If you
+have any problems or feedback for the developers, email
+team@piazza.com.</p>
+
+<p>Any non-personal questions related to the material covered in class,
+problem sets, labs, projects, etc. should be posted on Piazza.
+Before posting a new question please make sure to check if your
+question has already been answered. The TAs and myself will be
+answering questions on the forum daily and all students are expected
+to answer questions as well as part of the participation grade. Please
+use informative titles for your posts and link to the appropriate topics.</p>
+
+<p>Note that it is sometimes more efficient to answer statistical questions ``in person&rdquo; so please make use of Office Hours.</p>
+
+<hr />
+
+<h3 id="students-with-disabilities">Students with disabilities:</h3>
+
+<p>Students with disabilities who believe they may need accommodations in this class are encouraged to contact the <a href="http://www.access.duke.edu/students/requesting/index.php" target="_blank">Student Disability Access Office</a> at (919) 668-1267 as soon as possible to better ensure that such accommodations can be made.</p>
+
+<hr />
+
+<h3 id="academic-integrity">Academic integrity:</h3>
+
+<p>Duke University is a community dedicated to scholarship, leadership, and service and to the principles of honesty, fairness, respect, and accountability. Citizens of this community commit to reflect upon and uphold these principles in all academic and non-academic endeavors, and to protect and promote a culture of integrity. Cheating on exams and quizzes, plagiarism on homework assignments and projects, lying about an illness or absence and other forms of academic dishonesty are a breach of trust with classmates and faculty, violate the <a href="http://www.studentaffairs.duke.edu/conduct/resources/dcs" target="_blank">Duke Community Standard</a>, and will not be tolerated. Such incidences will result in a 0 grade for all parties involved as well as being reported to the <a href="http://www.studentaffairs.duke.edu/conduct" target="_blank">Office of Student Conduct</a>. Additionally, there may be penalties to your final class grade. Please review the <a href="http://www.studentaffairs.duke.edu/conduct/resources/academicdishonesty" target="_blank">Duke&rsquo;s Academic Dishonesty policies</a>.</p>
+
 
 
 
