@@ -1,6 +1,7 @@
 # Demo of Gaussian process regression with R
 # James Keirstead
 # 5 April 2012
+# Minor fixes July 2, 2022
 
 # Chapter 2 of Rasmussen and Williams's book `Gaussian Processes
 # for Machine Learning' provides a detailed explanation of the
